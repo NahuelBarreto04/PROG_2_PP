@@ -3,6 +3,7 @@ from funciones.mostrar_datos import mostrar_estudiantes, mostrar_materias_con_ma
 from funciones.promedios import crear_lista_promedios
 from funciones.ordenamiento import ordenar_por_promedio
 from funciones.busqueda import buscar_estudiante_por_legajo, buscar_notas_repetidas
+from funciones.validaciones import es_entero
 Init = True
 
 
@@ -32,14 +33,10 @@ while Init:
     print("7. Buscar y mostrar cuantas veces se repite cada calificación en una asignatura determinada")
     print("8. Salir del sistema")
     print("")
-    input_user_option = (input("Ingrese la opcion a realizar: "))
+    input_user_option = (input("Ingrese la opcion a realizar (1-8): "))
     ingreso_caso_1 = [False]
-    # valid_input = validate_number(input_user_option)
-
-    # while not valid_input:
-    #     print("Por favor ingrese el número correcto de la opción a ejecutar")
-    #     input_user_option = (input("Ingrese la opcion a realizar: "))
-    #     valid_input = validate_number(input_user_option)
+    if not es_entero(input_user_option) or int(input_user_option) < 1 and int(input_user_option) > 8:
+        print("La opción que ingresado no es valida, ingrese una opción que esté en el menu (1-8)")
 
 
     match input_user_option:

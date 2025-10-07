@@ -1,5 +1,5 @@
 from .mostrar_datos import mostrar_todos_estudiantes
-from .formateos import convertir_a_minusculas, quitar_espacios
+# from .formateos import convertir_a_minusculas, quitar_espacios
 
 
 

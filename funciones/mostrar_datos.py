@@ -18,9 +18,9 @@ def mostrar_estudiantes(notas:list, estudiantes:list, generos:list, estados:list
         Sin salida
         """
 
-        # if len(estudiantes) == 0:
-        #     print("No hay estudiantes cargados. Primero debe cargar estudiantes (Opcion 1).")
-        #     break
+        if len(estudiantes) == 0:
+            print("No hay estudiantes cargados. Primero debe cargar estudiantes (Opcion 1).")
+            break
 
         print("Desea mostrar todos los estudiantes o uno en particular?")
         print("1. Todos")
